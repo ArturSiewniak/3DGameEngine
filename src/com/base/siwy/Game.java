@@ -8,18 +8,18 @@ public class Game {
     }
 
     public void input(){
-        if (Input.getKeyDown(Keyboard.KEY_UP)){
+        if (Input.GetKeyDown(Keyboard.KEY_UP)){
             System.out.println("We've pressed up!");
         }
-        if (Input.getKeyUp(Keyboard.KEY_UP)){
+        if (Input.GetKeyUp(Keyboard.KEY_UP)){
             System.out.println("We've released up!");
         }
 
-        if (Input.getMouseDown(1)){
-            System.out.println("We've pressed rmb at " + Input.getMousePosition().toString() + "!");
+        if (Input.GetMouseDown(1)){
+            System.out.println("We've pressed rmb at " + Input.GetMousePosition().toString() + "!");
         }
-        if (Input.getMouseUp(1)){
-            System.out.println("We've released rmb at " + Input.getMousePosition().toString() + "!");
+        if (Input.GetMouseUp(1)){
+            System.out.println("We've released rmb at " + Input.GetMousePosition().toString() + "!");
         }
     }
 
